@@ -1,0 +1,19 @@
+local players = game:GetService("Players")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "OneFool & Rejoin";
+    Text = "Press R to Rejoin";
+    Duration = 2
+})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JkgPlane/Scripts/main/Protected_2926419064029033.txt"))()
+
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+
+local function onKeyPress(input)
+    if input.KeyCode == Enum.KeyCode.R then
+        TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
+    end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(onKeyPress)

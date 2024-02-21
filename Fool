@@ -5,8 +5,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Duration = 2
 })
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JkgPlane/Scripts/main/Protected_2926419064029033.txt"))()
-
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 
@@ -17,3 +15,5 @@ local function onKeyPress(input)
 end
 
 game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JkgPlane/Scripts/main/Protected_2926419064029033.txt"))()
